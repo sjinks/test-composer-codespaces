@@ -3,5 +3,14 @@
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
     "forwardPorts": [80],
-    "workspaceFolder": "/var/www/html"
+    "workspaceFolder": "/var/www/html",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {
+            "version": "os-provided"
+        },
+        "ghcr.io/devcontainers/features/github-cli:1": {
+            "installDirectlyFromGitHubRelease": true,
+            "version": "latest"
+        }
+    }
 }

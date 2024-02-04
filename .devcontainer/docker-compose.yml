@@ -8,6 +8,8 @@ services:
       WORDPRESS_DB_NAME: test
     ports:
       - 80
+    volumes:
+      - /workspaces/uploads:/var/www/html/wp-content/uploads
   mysql:
     image: mysql:8
     environment:

@@ -29,7 +29,7 @@ services:
       MYSQL_PASSWORD: test
     volumes:
       - mysql:/var/lib/mysql
-    entrypoint: "chown -R mysql:mysql /var/lib/mysql && /entrypoint.sh mysqld"
+    entrypoint: "chown -R mysql:mysql /var/lib/mysql && /usr/local/bin/entrypoint.sh mysqld"
 
 volumes:
   mysql:

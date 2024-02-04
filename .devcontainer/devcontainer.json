@@ -1,0 +1,7 @@
+{
+    "name": "Test Dev Container",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "forwardPorts": [80],
+    "workspaceFolder": "/var/www/html"
+}

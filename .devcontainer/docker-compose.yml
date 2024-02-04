@@ -1,0 +1,19 @@
+services:
+  app:
+    image: wordpress:php8.1
+    environment:
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_USER: test
+      WORDPRESS_DB_PASSWORD: test
+      WORDPRESS_DB_NAME: test
+    ports:
+      - 80
+  mysql:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: test
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+    volumes:
+      - /workspaces/mysql:/var/lib/mysql
